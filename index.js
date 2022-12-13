@@ -8,6 +8,10 @@ router.get('/photoshoot', function (req, res) {
     res.sendFile(path.join(__dirname + '/static/photoshoot.html'));
 });
 
+router.get('/arackaskodegerhesaplama', function (req, res) {
+    res.sendFile(path.join(__dirname + '/static/arackaskodegerhesaplama.html'));
+});
+
 app.use(router);
 
 const port = process.env.PORT || 3000;
