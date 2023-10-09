@@ -12,6 +12,10 @@ router.get('/arackaskodegerhesaplama', function (req, res) {
     res.sendFile(path.join(__dirname + '/static/arackaskodegerhesaplama.html'));
 });
 
+router.get('/story', function (req, res) {
+    res.sendFile(path.join(__dirname + '/static/story.html'));
+});
+
 app.use(router);
 
 const port = process.env.PORT || 3000;
